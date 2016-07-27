@@ -1,4 +1,9 @@
 module.exports = function (config) {
+
+  if(process.env.TRAVIS){
+      configuration.browsers = ['Chrome_travis_ci'];
+  }
+
   config.set({
     basePath: '..',
     frameworks: ['jasmine'],
@@ -6,6 +11,7 @@ module.exports = function (config) {
       require('karma-jasmine'),
       require('karma-chrome-launcher')
     ],
+    browsers: ['Chrome', 'ChromeCanary'],
     customLaunchers: {
       // chrome setup for travis CI using chromium
       Chrome_travis_ci: {
