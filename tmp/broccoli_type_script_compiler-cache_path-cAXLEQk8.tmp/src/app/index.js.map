@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["index.ts"],"names":[],"mappings":";AAAA,4BAA0B,eAAe,CAAC;AAAlC,gDAAkC;AAC1C,8CAA6C,iCAAiC,CAAC;AAAvE,wGAAuE","sourcesContent":["export {environment} from './environment';\nexport {EffectiveFunicularAppComponent} from './effective-funicular.component';\n"]}

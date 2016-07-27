@@ -1,0 +1,14 @@
+import { EffectiveFunicularPage } from './app.po';
+
+describe('effective-funicular App', function() {
+  let page: EffectiveFunicularPage;
+
+  beforeEach(() => {
+    page = new EffectiveFunicularPage();
+  })
+
+  it('should display message saying app works', () => {
+    page.navigateTo();
+    expect(page.getParagraphText()).toEqual('Effective Funicular Demo SPA');
+  });
+});
