@@ -7,7 +7,7 @@ describe('effective-funicular App', function() {
     page = new EffectiveFunicularPage();
   })
 
-  it('should display message saying app works', () => {
+  it('should display homepage elements', () => {
     page.navigateTo();
     expect(page.getParagraphText()).toEqual('Effective Funicular Demo SPA');
   });
